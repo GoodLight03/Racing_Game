@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".play_game"
+    android:background="@drawable/duongduachat"
+
+
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="113dp"
+        android:layout_height="108dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="215dp"
+        app:srcCompat="@drawable/flaglogo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxfive"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxfor"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/checkBoxfive"
+        android:layout_marginBottom="5dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxthree"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/checkBoxfor"
+        android:layout_marginBottom="5dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxtwo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/checkBoxthree"
+        android:layout_marginBottom="5dp" />
+
+    <CheckBox
+        android:id="@+id/checkBoxone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/checkBoxtwo"
+        android:layout_marginBottom="5dp" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/seekBarfive"
+        android:layout_width="550dp"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/checkBoxfive"
+        android:thumb="@drawable/car5" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:id="@+id/seekBarfor"
+        android:layout_width="550dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/seekBarfive"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/checkBoxfor"
+        android:thumb="@drawable/car4" />
+
+    <SeekBar
+        android:progressDrawable="@android:color/transparent"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/seekBarthree"
+        android:layout_width="550dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/seekBarfor"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/checkBoxthree"
+        android:thumb="@drawable/car3" />
+
+    <SeekBar
+
+        android:id="@+id/seekBartwo"
+        android:layout_width="550dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/seekBarthree"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@+id/checkBoxtwo"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/car2" />
+
+    <SeekBar
+        android:id="@+id/seekBarone"
+        android:layout_width="550dp"
+        android:layout_height="25dp"
+        android:layout_above="@+id/seekBartwo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/checkBoxone"
+        android:indeterminate="false"
+        android:progressDrawable="@android:color/transparent"
+        android:thumb="@drawable/car1"
+        />
+
+    <ImageView
+        android:id="@+id/startgame"
+        android:layout_width="175dp"
+        android:layout_height="165dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="46dp"
+        app:srcCompat="@drawable/startgame" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="279dp"
+        app:srcCompat="@drawable/money" />
+
+    <TextView
+
+        android:id="@+id/diem"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="550dp"
+        android:layout_marginBottom="289dp"
+        android:layout_toEndOf="@+id/imageView2"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text="Money"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="232dp"
+        android:layout_toStartOf="@+id/datcoc"
+        app:srcCompat="@drawable/moneysendt" />
+
+    <EditText
+        android:id="@+id/datcoc"
+        android:layout_width="82dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="546dp"
+        android:layout_marginBottom="243dp"
+        android:background="#8BC34A"
+        android:ems="10"
+        android:hint="Tiền cọc"
+        android:inputType="number"
+        android:textColor="#F44336"
+        android:textColorHint="#F44336"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gifbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="244dp"
+        app:srcCompat="@drawable/gifbox" />
+
+    <Button
+        android:id="@+id/buttonnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="331dp"
+        android:layout_marginBottom="281dp"
+        android:text="NEXT" />
+
+    <Button
+        android:id="@+id/buttonpre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="427dp"
+        android:layout_marginBottom="280dp"
+        android:text="PRE" />
+
+    <EditText
+        android:id="@+id/nameuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="285dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nhập tên"/>
+
+
+</RelativeLayout>
